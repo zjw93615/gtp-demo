@@ -1,0 +1,81 @@
+.chat_gpt_container {
+  padding: 24px;
+  height: calc(100vh - 48px);
+}
+
+.chat_gpt {
+  height: calc(100vh - 108px);
+
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .chat_gpt_image_box {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: solid 1px #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .chat_gpt_image_box_inner :global {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    img {
+      height: calc(100vh - 350px);
+      max-width: 90%;
+      object-fit: contain;
+      min-height: 200px;
+    }
+  }
+
+  .chat_gpt_text_list {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border: solid 1px #d9d9d9;
+
+    .text_list_row {
+      padding: 12px;
+
+      display: flex;
+
+      .user_text {
+        margin-left: auto;
+        width: auto;
+        max-width: 60%;
+        background-color: #d9d9d9;
+        padding: 6px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .bot_text {
+        margin-right: auto;
+        width: auto;
+        max-width: 60%;
+        padding: 6px;
+        border-radius: 6px;
+        background: #1677ff;
+        color: #ffffff;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+  }
+  .chat_gpt_input_text {
+    display: flex;
+    align-items: center;
+  }
+}
